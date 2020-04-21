@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.block{
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+  margin: 50px auto;
+}
+
+.element{
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  float: left;
+  box-sizing: border-box;
+}
