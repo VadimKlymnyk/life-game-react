@@ -2,8 +2,11 @@ import React from "react";
 import "./App.css";
 
 function Element({ onChange, value, i }) {
-  function apply() {
+  function move() {
     onChange(i);
+  }
+  function click() {
+    setTimeout(move);
   }
 
   return (
@@ -11,7 +14,8 @@ function Element({ onChange, value, i }) {
       <div
         className="element"
         style={{ backgroundColor: value === true ? "red" : "white" }}
-        onMouseOver={apply}
+        onMouseOver={move}
+        onMouseDown={click}
       ></div>
     </div>
   );
